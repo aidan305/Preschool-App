@@ -3,27 +3,95 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5944B32924AF45F400CDFCFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944B32824AF45F400CDFCFD /* AppDelegate.swift */; };
 		5944B32B24AF45F400CDFCFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944B32A24AF45F400CDFCFD /* SceneDelegate.swift */; };
-		5944B32D24AF45F400CDFCFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944B32C24AF45F400CDFCFD /* ContentView.swift */; };
+		5944B32D24AF45F400CDFCFD /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944B32C24AF45F400CDFCFD /* TabView.swift */; };
 		5944B32F24AF45F500CDFCFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5944B32E24AF45F500CDFCFD /* Assets.xcassets */; };
 		5944B33224AF45F500CDFCFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5944B33124AF45F500CDFCFD /* Preview Assets.xcassets */; };
 		5944B33524AF45F500CDFCFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5944B33324AF45F500CDFCFD /* LaunchScreen.storyboard */; };
+		5944B34424AF47BC00CDFCFD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944B34324AF47BC00CDFCFD /* User.swift */; };
+		5944B34624AF47D900CDFCFD /* RepositoryUserUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944B34524AF47D900CDFCFD /* RepositoryUserUpload.swift */; };
+		5944B34924AF481700CDFCFD /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944B34824AF481700CDFCFD /* SessionStore.swift */; };
+		5944B34C24AF484500CDFCFD /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944B34B24AF484500CDFCFD /* SignInView.swift */; };
+		5944B34E24AF485800CDFCFD /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944B34D24AF485800CDFCFD /* SignUpView.swift */; };
+		5944B35124AF48A100CDFCFD /* ActivitesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944B35024AF48A100CDFCFD /* ActivitesStore.swift */; };
+		5944B35424AF48CD00CDFCFD /* RepositoryDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944B35324AF48CD00CDFCFD /* RepositoryDownload.swift */; };
+		5944B35624AF48E400CDFCFD /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944B35524AF48E400CDFCFD /* Activity.swift */; };
+		5944B35924AF498500CDFCFD /* ActivityDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944B35824AF498500CDFCFD /* ActivityDetailView.swift */; };
+		5944B35B24AF49B500CDFCFD /* ActivityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944B35A24AF49B500CDFCFD /* ActivityListView.swift */; };
+		5944B35D24AF49CF00CDFCFD /* ImageSingleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944B35C24AF49CF00CDFCFD /* ImageSingleView.swift */; };
+		5944B36124AF4A0D00CDFCFD /* AistearStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944B36024AF4A0D00CDFCFD /* AistearStore.swift */; };
+		5944B36324AF4A2900CDFCFD /* AistearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944B36224AF4A2900CDFCFD /* AistearView.swift */; };
+		5944B36524AF4A4200CDFCFD /* AistearCellsFourConceptsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944B36424AF4A4200CDFCFD /* AistearCellsFourConceptsView.swift */; };
+		5944B36724AF4A5700CDFCFD /* GenericAistearConceptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944B36624AF4A5700CDFCFD /* GenericAistearConceptView.swift */; };
+		5944B36924AF4A7100CDFCFD /* AistearFourAimsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944B36824AF4A7100CDFCFD /* AistearFourAimsView.swift */; };
+		5944B37524AF4AA400CDFCFD /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5944B36A24AF4AA400CDFCFD /* Lato-BlackItalic.ttf */; };
+		5944B37624AF4AA400CDFCFD /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5944B36B24AF4AA400CDFCFD /* Lato-Black.ttf */; };
+		5944B37724AF4AA400CDFCFD /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5944B36C24AF4AA400CDFCFD /* Lato-Regular.ttf */; };
+		5944B37824AF4AA400CDFCFD /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5944B36D24AF4AA400CDFCFD /* Lato-Thin.ttf */; };
+		5944B37924AF4AA400CDFCFD /* Capriola-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5944B36E24AF4AA400CDFCFD /* Capriola-Regular.ttf */; };
+		5944B37A24AF4AA400CDFCFD /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5944B36F24AF4AA400CDFCFD /* Lato-BoldItalic.ttf */; };
+		5944B37B24AF4AA400CDFCFD /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5944B37024AF4AA400CDFCFD /* Lato-Italic.ttf */; };
+		5944B37C24AF4AA400CDFCFD /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5944B37124AF4AA400CDFCFD /* Lato-Bold.ttf */; };
+		5944B37D24AF4AA400CDFCFD /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5944B37224AF4AA400CDFCFD /* Lato-Light.ttf */; };
+		5944B37E24AF4AA400CDFCFD /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5944B37324AF4AA400CDFCFD /* Lato-LightItalic.ttf */; };
+		5944B37F24AF4AA400CDFCFD /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5944B37424AF4AA400CDFCFD /* Lato-ThinItalic.ttf */; };
+		5944B38124AF4B0A00CDFCFD /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944B38024AF4B0A00CDFCFD /* KeyboardResponder.swift */; };
+		5944B38324AF4B2500CDFCFD /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944B38224AF4B2500CDFCFD /* DateHelper.swift */; };
+		5944B38524AF4D6800CDFCFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5944B38424AF4D6800CDFCFD /* GoogleService-Info.plist */; };
+		5988000F24AF5B95009D6679 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5988000E24AF5B95009D6679 /* Podfile */; };
+		5988001124AF5BBC009D6679 /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 5988001024AF5BBC009D6679 /* Podfile.lock */; };
+		EE5903BC3E8191C945D92558 /* Pods_Preschool_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C542F27A37E4E4E5E08B3F5 /* Pods_Preschool_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18C8FED29B83DCA97B7C08F7 /* Pods-Preschool App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Preschool App.release.xcconfig"; path = "Target Support Files/Pods-Preschool App/Pods-Preschool App.release.xcconfig"; sourceTree = "<group>"; };
 		5944B32524AF45F400CDFCFD /* Preschool App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Preschool App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5944B32824AF45F400CDFCFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5944B32A24AF45F400CDFCFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5944B32C24AF45F400CDFCFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5944B32C24AF45F400CDFCFD /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		5944B32E24AF45F500CDFCFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5944B33124AF45F500CDFCFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5944B33424AF45F500CDFCFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5944B33624AF45F500CDFCFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5944B34324AF47BC00CDFCFD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5944B34524AF47D900CDFCFD /* RepositoryUserUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryUserUpload.swift; sourceTree = "<group>"; };
+		5944B34824AF481700CDFCFD /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		5944B34B24AF484500CDFCFD /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		5944B34D24AF485800CDFCFD /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		5944B35024AF48A100CDFCFD /* ActivitesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitesStore.swift; sourceTree = "<group>"; };
+		5944B35324AF48CD00CDFCFD /* RepositoryDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDownload.swift; sourceTree = "<group>"; };
+		5944B35524AF48E400CDFCFD /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		5944B35824AF498500CDFCFD /* ActivityDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailView.swift; sourceTree = "<group>"; };
+		5944B35A24AF49B500CDFCFD /* ActivityListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListView.swift; sourceTree = "<group>"; };
+		5944B35C24AF49CF00CDFCFD /* ImageSingleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSingleView.swift; sourceTree = "<group>"; };
+		5944B36024AF4A0D00CDFCFD /* AistearStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AistearStore.swift; sourceTree = "<group>"; };
+		5944B36224AF4A2900CDFCFD /* AistearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AistearView.swift; sourceTree = "<group>"; };
+		5944B36424AF4A4200CDFCFD /* AistearCellsFourConceptsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AistearCellsFourConceptsView.swift; sourceTree = "<group>"; };
+		5944B36624AF4A5700CDFCFD /* GenericAistearConceptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericAistearConceptView.swift; sourceTree = "<group>"; };
+		5944B36824AF4A7100CDFCFD /* AistearFourAimsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AistearFourAimsView.swift; sourceTree = "<group>"; };
+		5944B36A24AF4AA400CDFCFD /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		5944B36B24AF4AA400CDFCFD /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		5944B36C24AF4AA400CDFCFD /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		5944B36D24AF4AA400CDFCFD /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
+		5944B36E24AF4AA400CDFCFD /* Capriola-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Capriola-Regular.ttf"; sourceTree = "<group>"; };
+		5944B36F24AF4AA400CDFCFD /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		5944B37024AF4AA400CDFCFD /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
+		5944B37124AF4AA400CDFCFD /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		5944B37224AF4AA400CDFCFD /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		5944B37324AF4AA400CDFCFD /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		5944B37424AF4AA400CDFCFD /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		5944B38024AF4B0A00CDFCFD /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
+		5944B38224AF4B2500CDFCFD /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		5944B38424AF4D6800CDFCFD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5988000E24AF5B95009D6679 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		5988001024AF5BBC009D6679 /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
+		8C542F27A37E4E4E5E08B3F5 /* Pods_Preschool_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Preschool_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C333E1488A59329F9055971E /* Pods-Preschool App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Preschool App.debug.xcconfig"; path = "Target Support Files/Pods-Preschool App/Pods-Preschool App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5903BC3E8191C945D92558 /* Pods_Preschool_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +109,12 @@
 		5944B31C24AF45F400CDFCFD = {
 			isa = PBXGroup;
 			children = (
+				5988000E24AF5B95009D6679 /* Podfile */,
+				5988001024AF5BBC009D6679 /* Podfile.lock */,
 				5944B32724AF45F400CDFCFD /* Preschool App */,
 				5944B32624AF45F400CDFCFD /* Products */,
+				DB831F331BA809A96862D6FD /* Pods */,
+				E8C68DCF8EB08453D355FF0D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,11 +129,13 @@
 		5944B32724AF45F400CDFCFD /* Preschool App */ = {
 			isa = PBXGroup;
 			children = (
-				5944B32824AF45F400CDFCFD /* AppDelegate.swift */,
-				5944B32A24AF45F400CDFCFD /* SceneDelegate.swift */,
-				5944B32C24AF45F400CDFCFD /* ContentView.swift */,
-				5944B32E24AF45F500CDFCFD /* Assets.xcassets */,
-				5944B33324AF45F500CDFCFD /* LaunchScreen.storyboard */,
+				5944B32C24AF45F400CDFCFD /* TabView.swift */,
+				5944B33C24AF46DD00CDFCFD /* Authentication */,
+				5944B33D24AF46F500CDFCFD /* Activity Gallery */,
+				5944B33E24AF470500CDFCFD /* Aistear */,
+				5944B33F24AF470C00CDFCFD /* Fonts */,
+				5944B34024AF471300CDFCFD /* Helpers */,
+				5944B34124AF471A00CDFCFD /* Other */,
 				5944B33624AF45F500CDFCFD /* Info.plist */,
 				5944B33024AF45F500CDFCFD /* Preview Content */,
 			);
@@ -75,6 +150,163 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		5944B33C24AF46DD00CDFCFD /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				5944B34A24AF482D00CDFCFD /* View */,
+				5944B34724AF47EA00CDFCFD /* Store */,
+				5944B34224AF479D00CDFCFD /* Model */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		5944B33D24AF46F500CDFCFD /* Activity Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				5944B35724AF48F200CDFCFD /* View */,
+				5944B35224AF48AE00CDFCFD /* Model */,
+				5944B34F24AF488000CDFCFD /* Store */,
+			);
+			path = "Activity Gallery";
+			sourceTree = "<group>";
+		};
+		5944B33E24AF470500CDFCFD /* Aistear */ = {
+			isa = PBXGroup;
+			children = (
+				5944B35F24AF49F800CDFCFD /* View */,
+				5944B35E24AF49EB00CDFCFD /* Store */,
+			);
+			path = Aistear;
+			sourceTree = "<group>";
+		};
+		5944B33F24AF470C00CDFCFD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5944B36E24AF4AA400CDFCFD /* Capriola-Regular.ttf */,
+				5944B36B24AF4AA400CDFCFD /* Lato-Black.ttf */,
+				5944B36A24AF4AA400CDFCFD /* Lato-BlackItalic.ttf */,
+				5944B37124AF4AA400CDFCFD /* Lato-Bold.ttf */,
+				5944B36F24AF4AA400CDFCFD /* Lato-BoldItalic.ttf */,
+				5944B37024AF4AA400CDFCFD /* Lato-Italic.ttf */,
+				5944B37224AF4AA400CDFCFD /* Lato-Light.ttf */,
+				5944B37324AF4AA400CDFCFD /* Lato-LightItalic.ttf */,
+				5944B36C24AF4AA400CDFCFD /* Lato-Regular.ttf */,
+				5944B36D24AF4AA400CDFCFD /* Lato-Thin.ttf */,
+				5944B37424AF4AA400CDFCFD /* Lato-ThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5944B34024AF471300CDFCFD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5944B38024AF4B0A00CDFCFD /* KeyboardResponder.swift */,
+				5944B38224AF4B2500CDFCFD /* DateHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5944B34124AF471A00CDFCFD /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				5944B38424AF4D6800CDFCFD /* GoogleService-Info.plist */,
+				5944B33324AF45F500CDFCFD /* LaunchScreen.storyboard */,
+				5944B32E24AF45F500CDFCFD /* Assets.xcassets */,
+				5944B32A24AF45F400CDFCFD /* SceneDelegate.swift */,
+				5944B32824AF45F400CDFCFD /* AppDelegate.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		5944B34224AF479D00CDFCFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5944B34324AF47BC00CDFCFD /* User.swift */,
+				5944B34524AF47D900CDFCFD /* RepositoryUserUpload.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5944B34724AF47EA00CDFCFD /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				5944B34824AF481700CDFCFD /* SessionStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		5944B34A24AF482D00CDFCFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5944B34B24AF484500CDFCFD /* SignInView.swift */,
+				5944B34D24AF485800CDFCFD /* SignUpView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5944B34F24AF488000CDFCFD /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				5944B35024AF48A100CDFCFD /* ActivitesStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		5944B35224AF48AE00CDFCFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5944B35324AF48CD00CDFCFD /* RepositoryDownload.swift */,
+				5944B35524AF48E400CDFCFD /* Activity.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5944B35724AF48F200CDFCFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5944B35824AF498500CDFCFD /* ActivityDetailView.swift */,
+				5944B35A24AF49B500CDFCFD /* ActivityListView.swift */,
+				5944B35C24AF49CF00CDFCFD /* ImageSingleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5944B35E24AF49EB00CDFCFD /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				5944B36024AF4A0D00CDFCFD /* AistearStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		5944B35F24AF49F800CDFCFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5944B36224AF4A2900CDFCFD /* AistearView.swift */,
+				5944B36424AF4A4200CDFCFD /* AistearCellsFourConceptsView.swift */,
+				5944B36624AF4A5700CDFCFD /* GenericAistearConceptView.swift */,
+				5944B36824AF4A7100CDFCFD /* AistearFourAimsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB831F331BA809A96862D6FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C333E1488A59329F9055971E /* Pods-Preschool App.debug.xcconfig */,
+				18C8FED29B83DCA97B7C08F7 /* Pods-Preschool App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E8C68DCF8EB08453D355FF0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C542F27A37E4E4E5E08B3F5 /* Pods_Preschool_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +314,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5944B33924AF45F500CDFCFD /* Build configuration list for PBXNativeTarget "Preschool App" */;
 			buildPhases = (
+				A88164030FE3841820BC126E /* [CP] Check Pods Manifest.lock */,
 				5944B32124AF45F400CDFCFD /* Sources */,
 				5944B32224AF45F400CDFCFD /* Frameworks */,
 				5944B32324AF45F400CDFCFD /* Resources */,
+				57171B0FFFB2DABA14E37014 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,22 +367,96 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5944B37C24AF4AA400CDFCFD /* Lato-Bold.ttf in Resources */,
+				5944B37F24AF4AA400CDFCFD /* Lato-ThinItalic.ttf in Resources */,
+				5988001124AF5BBC009D6679 /* Podfile.lock in Resources */,
+				5944B38524AF4D6800CDFCFD /* GoogleService-Info.plist in Resources */,
+				5944B37B24AF4AA400CDFCFD /* Lato-Italic.ttf in Resources */,
+				5944B37524AF4AA400CDFCFD /* Lato-BlackItalic.ttf in Resources */,
+				5944B37D24AF4AA400CDFCFD /* Lato-Light.ttf in Resources */,
+				5944B37724AF4AA400CDFCFD /* Lato-Regular.ttf in Resources */,
+				5944B37924AF4AA400CDFCFD /* Capriola-Regular.ttf in Resources */,
+				5944B37A24AF4AA400CDFCFD /* Lato-BoldItalic.ttf in Resources */,
+				5944B37824AF4AA400CDFCFD /* Lato-Thin.ttf in Resources */,
+				5988000F24AF5B95009D6679 /* Podfile in Resources */,
 				5944B33524AF45F500CDFCFD /* LaunchScreen.storyboard in Resources */,
 				5944B33224AF45F500CDFCFD /* Preview Assets.xcassets in Resources */,
+				5944B37624AF4AA400CDFCFD /* Lato-Black.ttf in Resources */,
 				5944B32F24AF45F500CDFCFD /* Assets.xcassets in Resources */,
+				5944B37E24AF4AA400CDFCFD /* Lato-LightItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57171B0FFFB2DABA14E37014 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Preschool App/Pods-Preschool App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Preschool App/Pods-Preschool App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Preschool App/Pods-Preschool App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A88164030FE3841820BC126E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Preschool App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5944B32124AF45F400CDFCFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5944B36324AF4A2900CDFCFD /* AistearView.swift in Sources */,
+				5944B34424AF47BC00CDFCFD /* User.swift in Sources */,
+				5944B34C24AF484500CDFCFD /* SignInView.swift in Sources */,
+				5944B36524AF4A4200CDFCFD /* AistearCellsFourConceptsView.swift in Sources */,
+				5944B35924AF498500CDFCFD /* ActivityDetailView.swift in Sources */,
+				5944B36724AF4A5700CDFCFD /* GenericAistearConceptView.swift in Sources */,
 				5944B32924AF45F400CDFCFD /* AppDelegate.swift in Sources */,
+				5944B35D24AF49CF00CDFCFD /* ImageSingleView.swift in Sources */,
+				5944B35124AF48A100CDFCFD /* ActivitesStore.swift in Sources */,
+				5944B34924AF481700CDFCFD /* SessionStore.swift in Sources */,
+				5944B35424AF48CD00CDFCFD /* RepositoryDownload.swift in Sources */,
+				5944B34E24AF485800CDFCFD /* SignUpView.swift in Sources */,
+				5944B38324AF4B2500CDFCFD /* DateHelper.swift in Sources */,
 				5944B32B24AF45F400CDFCFD /* SceneDelegate.swift in Sources */,
-				5944B32D24AF45F400CDFCFD /* ContentView.swift in Sources */,
+				5944B38124AF4B0A00CDFCFD /* KeyboardResponder.swift in Sources */,
+				5944B32D24AF45F400CDFCFD /* TabView.swift in Sources */,
+				5944B35B24AF49B500CDFCFD /* ActivityListView.swift in Sources */,
+				5944B36924AF4A7100CDFCFD /* AistearFourAimsView.swift in Sources */,
+				5944B35624AF48E400CDFCFD /* Activity.swift in Sources */,
+				5944B36124AF4A0D00CDFCFD /* AistearStore.swift in Sources */,
+				5944B34624AF47D900CDFCFD /* RepositoryUserUpload.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +590,7 @@
 		};
 		5944B33A24AF45F500CDFCFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C333E1488A59329F9055971E /* Pods-Preschool App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +611,7 @@
 		};
 		5944B33B24AF45F500CDFCFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18C8FED29B83DCA97B7C08F7 /* Pods-Preschool App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
